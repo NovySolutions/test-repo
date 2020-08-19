@@ -1,0 +1,22 @@
+//This pages file is meant to override any styles from layout needed for specific instances
+
+.homeCards,
+.contactCards,
+.objectFitCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.objectFitCards {
+  > div {
+    padding: 8px;
+    box-sizing: border-box;
+  };
+  > div {
+    img {
+      object-fit: contain !important;
+    }
+  }
+}
+

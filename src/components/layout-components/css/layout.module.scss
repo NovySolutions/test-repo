@@ -1,0 +1,104 @@
+@import "../../../pages/css-pages/zindex";
+
+.layout {
+  --section-background-color: #ccc;
+}
+
+.layout {
+  margin: 0;
+  position: relative;
+  z-index: $zindexMain;
+}
+
+.layout {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 52px;
+    margin: 3rem 1rem;
+    text-shadow: 2px 2px 2px var(--text-shadow-color);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    margin: 1rem 1rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+
+  p,
+  td,
+  th,
+  label,
+  a,
+  li {
+    font-size: 1.2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  //sections are used for sections of the page you want small margins on the side, articles are used for large margins
+  section,
+  article {
+    margin: 3rem 5vw;
+  }
+
+  article {
+    h2, h3 {
+      text-align: left;
+      margin: 1rem 0;
+    }
+  }
+
+  // section:nth-child(odd) {
+  //   background-color: var(--section-background-color);
+  // }
+
+  @media only screen and (min-width: 992px) {
+    h1 {
+      font-size: 72px;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      margin: 5rem 1rem;
+    }
+
+    p,
+    td,
+    th,
+    label,
+    a, li {
+      font-size: 1.4rem;
+    }
+
+    section {
+      margin: 1rem 256px;
+    }
+
+    article {
+      margin: 5rem 25vw;
+    }
+  }
+}

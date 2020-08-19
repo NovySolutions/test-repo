@@ -1,0 +1,1 @@
+export const GoogleApi: string = process.env.GATSBY_GOOGLE_API_KEY
